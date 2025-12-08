@@ -752,6 +752,102 @@ body {
     font-weight: var(--font-weight-semibold);
 }
 
+.lang-switch {
+    background: var(--accent-gold) !important;
+    color: var(--white) !important;
+    padding: var(--spacing-xs) var(--spacing-sm) !important;
+    border-radius: var(--radius-sm) !important;
+    font-size: 0.9rem !important;
+    font-weight: var(--font-weight-semibold) !important;
+}
+
+.lang-switch:hover {
+    background: #9d8450 !important;
+}
+
+/* Success Stories Section */
+.success-stories {
+    padding: var(--spacing-xxl) 0;
+    background: var(--light-gray);
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.story {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.story h3 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-md);
+}
+
+.story p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.story-results {
+    list-style: none;
+    padding: 0;
+}
+
+.story-results li {
+    padding: var(--spacing-xs) 0;
+    position: relative;
+    padding-left: 25px;
+    color: var(--text-primary);
+    font-weight: var(--font-weight-medium);
+}
+
+.story-results li:before {
+    content: '📈';
+    position: absolute;
+    left: 0;
+    top: var(--spacing-xs);
+    font-size: 1rem;
+}
+
+/* About Values Section */
+.about-values {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--light-gray);
+}
+
+.about-values h3 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-values li {
+    padding: var(--spacing-sm) 0;
+    line-height: 1.6;
+}
+
+.about-values strong {
+    color: var(--accent-gold);
+    font-weight: var(--font-weight-semibold);
+}
+
 /* Responsive adjustments for solutions page */
 @media (max-width: 768px) {
     .solution-content {
