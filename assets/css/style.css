@@ -777,6 +777,111 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Image Placeholder Styles */
+.hero-image,
+.problem-image,
+.step-image,
+.solution-image,
+.about-image,
+.partner-logo {
+    background: linear-gradient(135deg, var(--light-gray) 0%, #e8e8ea 100%);
+    border: 2px dashed #d2d2d7;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-medium);
+    position: relative;
+}
+
+.hero-image::before {
+    content: "📚 Education Infrastructure";
+    font-size: 1.2rem;
+}
+
+.problem-image::before {
+    content: "🔗 System Integration";
+    font-size: 1rem;
+}
+
+.step-image::before {
+    content: "⚡ Process Flow";
+    font-size: 1rem;
+}
+
+.solution-image::before {
+    content: "💻 Technology Dashboard";
+    font-size: 1rem;
+}
+
+.about-image::before {
+    content: "👥 Team Collaboration";
+    font-size: 1rem;
+}
+
+.partner-logo {
+    height: 80px;
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+}
+
+.partner-logo::before {
+    content: "Partner Logo";
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Icon placeholders */
+.pillar-icon img,
+.solution-icon img {
+    width: 64px;
+    height: 64px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    position: relative;
+}
+
+.pillar-icon img::before {
+    content: "⚙️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+/* Handle missing images gracefully */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img:not([src]),
+img[src=""],
+img[src*="placeholder"] {
+    background: linear-gradient(135deg, var(--light-gray) 0%, #e8e8ea 100%);
+    border: 2px dashed #d2d2d7;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-medium);
+}
+
+/* Logo specific styling */
+.logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    filter: none;
+}
+
+.footer .logo {
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+
 /* Loading states and animations */
 @keyframes fadeInUp {
     from {
